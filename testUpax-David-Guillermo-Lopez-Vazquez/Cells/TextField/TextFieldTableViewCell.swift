@@ -10,7 +10,8 @@ import UIKit
 protocol EnableFormDelegate: AnyObject {
     func enableForm(enable: Bool)
 }
-class TextFieldTableViewCell: UITableViewCell, UITextFieldDelegate {
+
+class TextFieldTableViewCell: UITableViewCell, UITextFieldDelegate, TextFieldUserNameDelegate {
     
     static let identifier = "TextFieldTableViewCell"
     
@@ -36,5 +37,9 @@ class TextFieldTableViewCell: UITableViewCell, UITextFieldDelegate {
             enableFormDelegate?.enableForm(enable: false)
             return false
         }
+    }
+    
+    func getUserName() -> String? {
+        return textField_.text
     }
 }

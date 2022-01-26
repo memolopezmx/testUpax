@@ -17,6 +17,10 @@ protocol SelfieDelegate: AnyObject {
     func update(selfieImage: UIImage)
 }
 
+protocol TextFieldUserNameDelegate: AnyObject {
+    func getUserName() -> String?
+}
+
 protocol UpaxDisplayLogic: AnyObject {
     func displayGraph(viewModel: UpaxModels.FetchSalinas.ViewModel)
 }
@@ -37,6 +41,7 @@ class UpaxViewController: UIViewController, UpaxDisplayLogic, EnableFormDelegate
         }
     }
     weak var selfieDelegate: SelfieDelegate?
+    weak var userNameDelegate: TextFieldUserNameDelegate?
     var sectionTitles = ["Nombre", "Selfie"]
     var questions = [[Chart]]()
     var textFieldEmpty = false
@@ -122,13 +127,17 @@ class UpaxViewController: UIViewController, UpaxDisplayLogic, EnableFormDelegate
         guard let selfieData = selfieImage.pngData() else {
             return
         }
-        storage.child("images/selfie.png").putData(selfieData, metadata: nil) { _, error in
+        guard let nameDelegate = self.userNameDelegate else {
+            return
+        }
+        let pathWithName = "image/" + (nameDelegate.getUserName() ?? String(Int.random(in: 1...99))) + ".png"
+        storage.child(pathWithName).putData(selfieData, metadata: nil) { _, error in
             guard error == nil else {
                 print("Failed to upload")
                 return
             }
             
-            self.storage.child("images/selfie.png").downloadURL { url, error in
+            self.storage.child(pathWithName).downloadURL { url, error in
                 guard let url = url, error == nil else {
                     return
                 }
@@ -136,7 +145,6 @@ class UpaxViewController: UIViewController, UpaxDisplayLogic, EnableFormDelegate
                 print("Downloading URL: \(urlStr)")
                 
             }
-            
         }
     }
 }
@@ -158,6 +166,7 @@ extension UpaxViewController: UITableViewDataSource {
                 return UITableViewCell()
             }
             cell.enableFormDelegate = self
+            userNameDelegate = cell
             return cell
         case UpaxEnum.selfie.rawValue:
             guard let cell = tableView.dequeueReusableCell(withIdentifier: SelfieTableViewCell.identifier) as? SelfieTableViewCell else {
