@@ -11,6 +11,7 @@
 //
 
 import UIKit
+import FirebaseStorage
 
 protocol SelfieDelegate: AnyObject {
     func update(selfieImage: UIImage)
@@ -30,10 +31,16 @@ class UpaxViewController: UIViewController, UpaxDisplayLogic, EnableFormDelegate
     @IBOutlet weak var sendButton: UIButton!
     
     var imagePicker: UIImagePickerController!
-    var selfieImage: UIImage?
+    var selfieImage: UIImage? {
+        didSet {
+            self.enableForm(enable: self.textFieldEmpty)
+        }
+    }
     weak var selfieDelegate: SelfieDelegate?
     var sectionTitles = ["Nombre", "Selfie"]
     var questions = [[Chart]]()
+    var textFieldEmpty = false
+    private let storage = Storage.storage().reference()
     
     // MARK: - Lifecycle
     override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
@@ -98,17 +105,39 @@ class UpaxViewController: UIViewController, UpaxDisplayLogic, EnableFormDelegate
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
         imagePicker.dismiss(animated: true, completion: nil)
         guard let selfieImage = info[UIImagePickerController.InfoKey.originalImage] as? UIImage else { return }
+        self.selfieDelegate?.update(selfieImage: selfieImage)
         self.selfieImage = selfieImage
-        selfieDelegate?.update(selfieImage: selfieImage)
     }
     
     func enableForm(enable: Bool) {
+        self.textFieldEmpty = enable
         sendButton.isEnabled = enable && (self.selfieImage != nil)
     }
     
     // MARK: Acions
     @IBAction func sendButtonAction(_ sender: Any) {
-        
+        guard let selfieImage = self.selfieImage else {
+            return
+        }
+        guard let selfieData = selfieImage.pngData() else {
+            return
+        }
+        storage.child("images/selfie.png").putData(selfieData, metadata: nil) { _, error in
+            guard error == nil else {
+                print("Failed to upload")
+                return
+            }
+            
+            self.storage.child("images/selfie.png").downloadURL { url, error in
+                guard let url = url, error == nil else {
+                    return
+                }
+                let urlStr = url.absoluteString
+                print("Downloading URL: \(urlStr)")
+                
+            }
+            
+        }
     }
 }
 
@@ -158,7 +187,7 @@ extension UpaxViewController: UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
-        if indexPath.row == UpaxEnum.selfie.rawValue {
+        if indexPath.section == UpaxEnum.selfie.rawValue {
             takePhoto()
         }
     }

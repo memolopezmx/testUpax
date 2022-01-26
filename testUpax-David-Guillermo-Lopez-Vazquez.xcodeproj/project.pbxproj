@@ -18,6 +18,7 @@
 		B231227E27A05F3900BFEB2B /* SelfieTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B231227D27A05F3900BFEB2B /* SelfieTableViewCell.swift */; };
 		B231228127A0711D00BFEB2B /* GraphTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B231228027A0711D00BFEB2B /* GraphTableViewCell.swift */; };
 		B231228327A074C300BFEB2B /* SalinasData.swift in Sources */ = {isa = PBXBuildFile; fileRef = B231228227A074C300BFEB2B /* SalinasData.swift */; };
+		B23122A927A1B21E00BFEB2B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B23122A827A1B21E00BFEB2B /* GoogleService-Info.plist */; };
 		B299532027A051A600EFEC18 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B299531F27A051A600EFEC18 /* AppDelegate.swift */; };
 		B299532227A051A600EFEC18 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B299532127A051A600EFEC18 /* SceneDelegate.swift */; };
 		B299532727A051A600EFEC18 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B299532527A051A600EFEC18 /* Main.storyboard */; };
@@ -38,6 +39,7 @@
 		B231227D27A05F3900BFEB2B /* SelfieTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelfieTableViewCell.swift; sourceTree = "<group>"; };
 		B231228027A0711D00BFEB2B /* GraphTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphTableViewCell.swift; sourceTree = "<group>"; };
 		B231228227A074C300BFEB2B /* SalinasData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SalinasData.swift; sourceTree = "<group>"; };
+		B23122A827A1B21E00BFEB2B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		B299531C27A051A600EFEC18 /* testUpax-David-Guillermo-Lopez-Vazquez.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "testUpax-David-Guillermo-Lopez-Vazquez.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B299531F27A051A600EFEC18 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B299532127A051A600EFEC18 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -138,6 +140,7 @@
 		B299531E27A051A600EFEC18 /* testUpax-David-Guillermo-Lopez-Vazquez */ = {
 			isa = PBXGroup;
 			children = (
+				B23122A827A1B21E00BFEB2B /* GoogleService-Info.plist */,
 				B231228427A076DE00BFEB2B /* Scene */,
 				B231226C27A0548500BFEB2B /* Cells */,
 				B299531F27A051A600EFEC18 /* AppDelegate.swift */,
@@ -219,6 +222,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B299532C27A051A800EFEC18 /* LaunchScreen.storyboard in Resources */,
+				B23122A927A1B21E00BFEB2B /* GoogleService-Info.plist in Resources */,
 				B299532927A051A800EFEC18 /* Assets.xcassets in Resources */,
 				B299532727A051A600EFEC18 /* Main.storyboard in Resources */,
 			);

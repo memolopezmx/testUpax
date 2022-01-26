@@ -8,4 +8,7 @@ target 'testUpax-David-Guillermo-Lopez-Vazquez' do
   # Pods for testUpax-David-Guillermo-Lopez-Vazquez
   pod 'Alamofire'
   pod 'Charts'
+  pod 'Firebase/Core'
+  pod 'Firebase/Storage'
+  
 end
