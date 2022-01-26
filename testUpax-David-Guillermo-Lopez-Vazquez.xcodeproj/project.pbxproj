@@ -1,0 +1,517 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0C95385AD6078AA8001556E6 /* Pods_testUpax_David_Guillermo_Lopez_Vazquez.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4628BD52F350E049A9051128 /* Pods_testUpax_David_Guillermo_Lopez_Vazquez.framework */; };
+		B231226F27A054AF00BFEB2B /* TextFieldTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B231226E27A054AE00BFEB2B /* TextFieldTableViewCell.swift */; };
+		B231227627A05BA200BFEB2B /* UpaxPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B231227027A05BA200BFEB2B /* UpaxPresenter.swift */; };
+		B231227727A05BA200BFEB2B /* UpaxWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = B231227127A05BA200BFEB2B /* UpaxWorker.swift */; };
+		B231227827A05BA200BFEB2B /* UpaxRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B231227227A05BA200BFEB2B /* UpaxRouter.swift */; };
+		B231227927A05BA200BFEB2B /* UpaxModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = B231227327A05BA200BFEB2B /* UpaxModels.swift */; };
+		B231227A27A05BA200BFEB2B /* UpaxViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B231227427A05BA200BFEB2B /* UpaxViewController.swift */; };
+		B231227B27A05BA200BFEB2B /* UpaxInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B231227527A05BA200BFEB2B /* UpaxInteractor.swift */; };
+		B231227E27A05F3900BFEB2B /* SelfieTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B231227D27A05F3900BFEB2B /* SelfieTableViewCell.swift */; };
+		B231228127A0711D00BFEB2B /* GraphTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B231228027A0711D00BFEB2B /* GraphTableViewCell.swift */; };
+		B231228327A074C300BFEB2B /* SalinasData.swift in Sources */ = {isa = PBXBuildFile; fileRef = B231228227A074C300BFEB2B /* SalinasData.swift */; };
+		B299532027A051A600EFEC18 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B299531F27A051A600EFEC18 /* AppDelegate.swift */; };
+		B299532227A051A600EFEC18 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B299532127A051A600EFEC18 /* SceneDelegate.swift */; };
+		B299532727A051A600EFEC18 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B299532527A051A600EFEC18 /* Main.storyboard */; };
+		B299532927A051A800EFEC18 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B299532827A051A800EFEC18 /* Assets.xcassets */; };
+		B299532C27A051A800EFEC18 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B299532A27A051A800EFEC18 /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		4628BD52F350E049A9051128 /* Pods_testUpax_David_Guillermo_Lopez_Vazquez.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_testUpax_David_Guillermo_Lopez_Vazquez.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		91E633A6070EE8CCF601ACBE /* Pods-testUpax-David-Guillermo-Lopez-Vazquez.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-testUpax-David-Guillermo-Lopez-Vazquez.release.xcconfig"; path = "Target Support Files/Pods-testUpax-David-Guillermo-Lopez-Vazquez/Pods-testUpax-David-Guillermo-Lopez-Vazquez.release.xcconfig"; sourceTree = "<group>"; };
+		B231226E27A054AE00BFEB2B /* TextFieldTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldTableViewCell.swift; sourceTree = "<group>"; };
+		B231227027A05BA200BFEB2B /* UpaxPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpaxPresenter.swift; sourceTree = "<group>"; };
+		B231227127A05BA200BFEB2B /* UpaxWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpaxWorker.swift; sourceTree = "<group>"; };
+		B231227227A05BA200BFEB2B /* UpaxRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpaxRouter.swift; sourceTree = "<group>"; };
+		B231227327A05BA200BFEB2B /* UpaxModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpaxModels.swift; sourceTree = "<group>"; };
+		B231227427A05BA200BFEB2B /* UpaxViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpaxViewController.swift; sourceTree = "<group>"; };
+		B231227527A05BA200BFEB2B /* UpaxInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpaxInteractor.swift; sourceTree = "<group>"; };
+		B231227D27A05F3900BFEB2B /* SelfieTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelfieTableViewCell.swift; sourceTree = "<group>"; };
+		B231228027A0711D00BFEB2B /* GraphTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphTableViewCell.swift; sourceTree = "<group>"; };
+		B231228227A074C300BFEB2B /* SalinasData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SalinasData.swift; sourceTree = "<group>"; };
+		B299531C27A051A600EFEC18 /* testUpax-David-Guillermo-Lopez-Vazquez.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "testUpax-David-Guillermo-Lopez-Vazquez.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B299531F27A051A600EFEC18 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B299532127A051A600EFEC18 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		B299532627A051A600EFEC18 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B299532827A051A800EFEC18 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B299532B27A051A800EFEC18 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B299532D27A051A800EFEC18 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C83ADEAE2FB555406DB871E7 /* Pods-testUpax-David-Guillermo-Lopez-Vazquez.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-testUpax-David-Guillermo-Lopez-Vazquez.debug.xcconfig"; path = "Target Support Files/Pods-testUpax-David-Guillermo-Lopez-Vazquez/Pods-testUpax-David-Guillermo-Lopez-Vazquez.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B299531927A051A600EFEC18 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0C95385AD6078AA8001556E6 /* Pods_testUpax_David_Guillermo_Lopez_Vazquez.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3F785401B1784B2E6BCFCBCF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C83ADEAE2FB555406DB871E7 /* Pods-testUpax-David-Guillermo-Lopez-Vazquez.debug.xcconfig */,
+				91E633A6070EE8CCF601ACBE /* Pods-testUpax-David-Guillermo-Lopez-Vazquez.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		B231226C27A0548500BFEB2B /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				B231227F27A0710F00BFEB2B /* Graph */,
+				B231227C27A05F2800BFEB2B /* Selfie */,
+				B231226D27A0548C00BFEB2B /* TextField */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		B231226D27A0548C00BFEB2B /* TextField */ = {
+			isa = PBXGroup;
+			children = (
+				B231226E27A054AE00BFEB2B /* TextFieldTableViewCell.swift */,
+			);
+			path = TextField;
+			sourceTree = "<group>";
+		};
+		B231227C27A05F2800BFEB2B /* Selfie */ = {
+			isa = PBXGroup;
+			children = (
+				B231227D27A05F3900BFEB2B /* SelfieTableViewCell.swift */,
+			);
+			path = Selfie;
+			sourceTree = "<group>";
+		};
+		B231227F27A0710F00BFEB2B /* Graph */ = {
+			isa = PBXGroup;
+			children = (
+				B231228027A0711D00BFEB2B /* GraphTableViewCell.swift */,
+			);
+			path = Graph;
+			sourceTree = "<group>";
+		};
+		B231228427A076DE00BFEB2B /* Scene */ = {
+			isa = PBXGroup;
+			children = (
+				B231227027A05BA200BFEB2B /* UpaxPresenter.swift */,
+				B231227127A05BA200BFEB2B /* UpaxWorker.swift */,
+				B231227227A05BA200BFEB2B /* UpaxRouter.swift */,
+				B231227327A05BA200BFEB2B /* UpaxModels.swift */,
+				B231227427A05BA200BFEB2B /* UpaxViewController.swift */,
+				B231227527A05BA200BFEB2B /* UpaxInteractor.swift */,
+				B231228227A074C300BFEB2B /* SalinasData.swift */,
+			);
+			path = Scene;
+			sourceTree = "<group>";
+		};
+		B299531327A051A600EFEC18 = {
+			isa = PBXGroup;
+			children = (
+				B299531E27A051A600EFEC18 /* testUpax-David-Guillermo-Lopez-Vazquez */,
+				B299531D27A051A600EFEC18 /* Products */,
+				3F785401B1784B2E6BCFCBCF /* Pods */,
+				FFA4F710DE13B594568892F9 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		B299531D27A051A600EFEC18 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B299531C27A051A600EFEC18 /* testUpax-David-Guillermo-Lopez-Vazquez.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B299531E27A051A600EFEC18 /* testUpax-David-Guillermo-Lopez-Vazquez */ = {
+			isa = PBXGroup;
+			children = (
+				B231228427A076DE00BFEB2B /* Scene */,
+				B231226C27A0548500BFEB2B /* Cells */,
+				B299531F27A051A600EFEC18 /* AppDelegate.swift */,
+				B299532127A051A600EFEC18 /* SceneDelegate.swift */,
+				B299532527A051A600EFEC18 /* Main.storyboard */,
+				B299532827A051A800EFEC18 /* Assets.xcassets */,
+				B299532A27A051A800EFEC18 /* LaunchScreen.storyboard */,
+				B299532D27A051A800EFEC18 /* Info.plist */,
+			);
+			path = "testUpax-David-Guillermo-Lopez-Vazquez";
+			sourceTree = "<group>";
+		};
+		FFA4F710DE13B594568892F9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4628BD52F350E049A9051128 /* Pods_testUpax_David_Guillermo_Lopez_Vazquez.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B299531B27A051A600EFEC18 /* testUpax-David-Guillermo-Lopez-Vazquez */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B299533027A051A800EFEC18 /* Build configuration list for PBXNativeTarget "testUpax-David-Guillermo-Lopez-Vazquez" */;
+			buildPhases = (
+				0D165BC658842E943CFFBDD6 /* [CP] Check Pods Manifest.lock */,
+				B299531827A051A600EFEC18 /* Sources */,
+				B299531927A051A600EFEC18 /* Frameworks */,
+				B299531A27A051A600EFEC18 /* Resources */,
+				4C99A7CD6FE255559AC7C3BB /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "testUpax-David-Guillermo-Lopez-Vazquez";
+			productName = "testUpax-David-Guillermo-Lopez-Vazquez";
+			productReference = B299531C27A051A600EFEC18 /* testUpax-David-Guillermo-Lopez-Vazquez.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B299531427A051A600EFEC18 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1310;
+				LastUpgradeCheck = 1310;
+				TargetAttributes = {
+					B299531B27A051A600EFEC18 = {
+						CreatedOnToolsVersion = 13.1;
+					};
+				};
+			};
+			buildConfigurationList = B299531727A051A600EFEC18 /* Build configuration list for PBXProject "testUpax-David-Guillermo-Lopez-Vazquez" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B299531327A051A600EFEC18;
+			productRefGroup = B299531D27A051A600EFEC18 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B299531B27A051A600EFEC18 /* testUpax-David-Guillermo-Lopez-Vazquez */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B299531A27A051A600EFEC18 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B299532C27A051A800EFEC18 /* LaunchScreen.storyboard in Resources */,
+				B299532927A051A800EFEC18 /* Assets.xcassets in Resources */,
+				B299532727A051A600EFEC18 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0D165BC658842E943CFFBDD6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-testUpax-David-Guillermo-Lopez-Vazquez-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4C99A7CD6FE255559AC7C3BB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-testUpax-David-Guillermo-Lopez-Vazquez/Pods-testUpax-David-Guillermo-Lopez-Vazquez-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-testUpax-David-Guillermo-Lopez-Vazquez/Pods-testUpax-David-Guillermo-Lopez-Vazquez-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-testUpax-David-Guillermo-Lopez-Vazquez/Pods-testUpax-David-Guillermo-Lopez-Vazquez-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B299531827A051A600EFEC18 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B231228327A074C300BFEB2B /* SalinasData.swift in Sources */,
+				B231227A27A05BA200BFEB2B /* UpaxViewController.swift in Sources */,
+				B231227827A05BA200BFEB2B /* UpaxRouter.swift in Sources */,
+				B299532027A051A600EFEC18 /* AppDelegate.swift in Sources */,
+				B231227E27A05F3900BFEB2B /* SelfieTableViewCell.swift in Sources */,
+				B231227B27A05BA200BFEB2B /* UpaxInteractor.swift in Sources */,
+				B299532227A051A600EFEC18 /* SceneDelegate.swift in Sources */,
+				B231227627A05BA200BFEB2B /* UpaxPresenter.swift in Sources */,
+				B231227927A05BA200BFEB2B /* UpaxModels.swift in Sources */,
+				B231226F27A054AF00BFEB2B /* TextFieldTableViewCell.swift in Sources */,
+				B231228127A0711D00BFEB2B /* GraphTableViewCell.swift in Sources */,
+				B231227727A05BA200BFEB2B /* UpaxWorker.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		B299532527A051A600EFEC18 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B299532627A051A600EFEC18 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B299532A27A051A800EFEC18 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B299532B27A051A800EFEC18 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B299532E27A051A800EFEC18 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B299532F27A051A800EFEC18 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B299533127A051A800EFEC18 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C83ADEAE2FB555406DB871E7 /* Pods-testUpax-David-Guillermo-Lopez-Vazquez.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7YCD4U7GNS;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "testUpax-David-Guillermo-Lopez-Vazquez/Info.plist";
+				INFOPLIST_KEY_NSCameraUsageDescription = "This app will use camera.";
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "Please allow access to save photo in your photo library";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "You can select photos to attach to reports.";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "upax.com.mx.testUpax-David-Guillermo-Lopez-Vazquez";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B299533227A051A800EFEC18 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 91E633A6070EE8CCF601ACBE /* Pods-testUpax-David-Guillermo-Lopez-Vazquez.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7YCD4U7GNS;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "testUpax-David-Guillermo-Lopez-Vazquez/Info.plist";
+				INFOPLIST_KEY_NSCameraUsageDescription = "This app will use camera.";
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "Please allow access to save photo in your photo library";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "You can select photos to attach to reports.";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "upax.com.mx.testUpax-David-Guillermo-Lopez-Vazquez";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B299531727A051A600EFEC18 /* Build configuration list for PBXProject "testUpax-David-Guillermo-Lopez-Vazquez" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B299532E27A051A800EFEC18 /* Debug */,
+				B299532F27A051A800EFEC18 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B299533027A051A800EFEC18 /* Build configuration list for PBXNativeTarget "testUpax-David-Guillermo-Lopez-Vazquez" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B299533127A051A800EFEC18 /* Debug */,
+				B299533227A051A800EFEC18 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B299531427A051A600EFEC18 /* Project object */;
+}
